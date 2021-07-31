@@ -2,6 +2,12 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from “react-router-dom”;
 
 import "bootstrap/dist/css/bootstrap.min.css";
+
+import Navbar from "./components/navbar"
+import ExercisesList from "./components/ex-list"
+import EditExercise from "./components/edit-ex"
+import CreateExercise from "./components/create-ex"
+import CreateUser from "./components/create-user"
  
 function App() {
   return (
