@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import axios from 'axios';
 
-const baseUrl = process.env.BASE_URL;
+const baseUrl = process.env.BASE_URL || 'http://localhost:5000';
 
 const Exercise = props => (
 	<tr>
-		<td>{proprs.exercise.username}</td>
+		<td>{props.exercise.username}</td>
 		<td>{props.exercise.description}</td>
 		<td>{props.exercise.duration}</td>
 		<td>{props.exercise.date.substring(0,10)}</td>
